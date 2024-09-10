@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family:'Bebas Neue', cursive;
+    font-size: 16px;
+}
+
+.content {
+    width: 100%;
+    margin:auto;
+}
+
+/*CABECERO =================================================================================================*/
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    width: 100%;
+    z-index: 10;
+    transition: .4s;
+}
+.header ul{
+    
+    position: relative;
+    margin: 0px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24px;
+}
+.header a {
+    transition: 0.6s;
+    opacity: 0.8;
+    &:hover {
+        color: #f1b557;
+        opacity: 1;
+        transition: 0.2s;
+    }
+}
+
+#actualPage {
+    color: #f1b557;
+    opacity: 1;
+    cursor: default;
+}
+
+    /*CABECERO SCROLL*/
+
+.header.scroll {
+    position: fixed;
+    top: 0;
+    background: #f6ab33;
+    transition: .4s;
+}
+
+.header.scroll a:hover {
+    color: #17243f;
+} 
+
+.header.scroll #actualPage {
+    color: #17243f;
+}
+
+/* PORTADA ================================================================================================ */
+.backShow {
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 6%,
+                                    rgba(0, 0, 0, 0) 40%), 
+                    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                    url(../../database/PastoraSanAntonio.jpeg);
+    background-position: top;
+    background-position-y: 50px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 530px;
+    width: 100%;
+}
+
+.showCase {
+    position: absolute;
+    width: 415px;
+    height: fit-content;
+    bottom: -20px;
+    left: 100px;
+    padding: 40px 0 0 20px;
+    color: #f3f3f3;
+    background-color: #05080e;
+}
+
+.buttonsShow {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.showCase h1 {
+    font-size: 50px;
+}
+
+.showCase h4 {
+    font-size: 20px;
+    color: #f6ab33;
+}
+
+.showCase p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 15px 30px 15px 0;
+}
+
+.buttonsShow .button {
+    color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 18px 40px;
+    font-weight: 300;
+    transition: 0.6s;
+    &:hover {
+        background: #f3f3f3;
+        color: #05080e;
+        transition: 0.5s;
+    }
+}
+
+/*SEARCH ================================================================================================*/
+
+.backSearch {
+    background-color: #05080e;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.searchLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 60px;
+    width: 70%;
+    margin: auto;
+    padding: 50px 40px;
+}
+
+/* From Uiverse.io by Satwinder04 */ 
+.input-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input-container input[type="text"] {
+    font-size: 30px;
+    color: #f3f3f3;
+    font-family:'Bebas Neue', cursive;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #f3f3f3;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .input-container .label {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f3f3f381;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="text"]:focus ~ .label,
+  .input-container input[type="text"]:valid ~ .label {
+    top: -30px;
+    font-size: 20px;
+    color: #f6ab33;
+  }
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #f6ab33;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+
+  .buttonSearch {
+    border: 1px solid white;
+    padding: 18px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .4s;
+    margin-right: 40px;
+    &:hover {
+        background-color: #f3f3f3;
+        border-color: #f3f3f3;
+        color: #17243f;
+        transition: .4s;
+    }
+  }
+  
+
+
+
+/*FOOTER ================================================================================================*/
+    
+.backFooter {
+    background: #05080e;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+    /*SOCIAL NETWORKS*/
+
+.socialNetworks {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.socialNetworks ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.socialNetworks a {
+    border-bottom: 2px solid #05080e;
+    transition: .25s;
+    &:hover {
+        border-bottom: 2px solid white;
+        transition: .25s;
+    }
+}
+
+.socialNetworks img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+    /*FOOTER LINKS*/
+
+.footerLinks {
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #40444d;
+}
+
+.footerLinks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerLinks a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+    /*FOOTER COPYRIGHT*/
+
+.footerCopy {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerCopy p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #40444d;
+}
+
+.footerCopy a {
+    color: #40444d;
+    transition: .25s;
+    &:hover {
+        color: #f1b557;
+        transition: .25s;
+
+    }
+}
+

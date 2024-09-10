@@ -1,0 +1,442 @@
+@media (max-width: 1170px){
+
+    .principalEvent  {
+        height: 60vh;
+    }
+
+    .colorBackDecoration {
+        width: 100%;
+    }
+
+    .principalPublications {
+        margin: auto;
+        padding-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .publications {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .textInformation {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .socialNetworks span {
+        display: none;
+    }
+    .colorBackDecoration {
+        margin-right: 100px;
+    }
+
+    .imgInformation {
+        width: 30%;
+    }
+
+    #img1 {
+        top: 150px;
+        left: 0;
+    }
+
+    #decoration1 {
+        top: 70px;
+    }
+}
+
+@media (max-width: 1005px) {
+
+    .backInformation .bandaInformation {
+        justify-content: center;
+        width: 95%;
+    }
+
+    .textInformation {
+        padding-left: 20px;
+        width: 70%;
+        margin: auto;
+        padding-right: 100px;
+    }
+
+    .imgInformation {
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .imgInformation .imagen img {
+        position: relative;
+    }
+
+    #img1 {
+        top: 50%;
+        width: 200px;
+        left: auto;
+        right: 5px;
+    }
+
+    #decoration1 {
+        right: 50px;
+        top: 50px;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 850px) {
+
+    .header.scroll{
+        position: absolute;
+        top: 0;
+        background: none;
+        z-index: 6;
+    }
+
+    .header .menu {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-image: url(../../img/menusBlanco.png);
+        background-size: contain;
+        top: 10px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 1;
+        transition: .4s;
+    }
+
+    .header.active .menu {
+        background-image: url(../../img/menuOscuro.png);
+        transition: .4s;
+    }
+
+    .header ul {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #f6ab33;
+        width: 35%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 80px 40px 30px 50px;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: .4s;
+    }
+
+    .header ul li {
+        margin-bottom: 20px;
+    }
+
+    .header a {
+        color: #05080e;
+        font-size: 30px;
+        border-bottom: 2px solid #05080e;
+    }
+
+    .header.active ul {
+        transform: translateX(0px);
+        transition: .4s;
+        z-index: 1;
+    }
+
+    .header.active.scroll ul{
+        transform: translateX(-100%);
+    }
+
+    .backShow {
+        display: block;
+        height: 70vh;
+    }
+
+    .headCase {
+        position:absolute;
+        flex-direction: row;
+        background: #05080e;
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-around;
+        padding-left: 50%;
+        height: 60px;
+        align-items: center;
+    }
+
+    .showCase {
+        position: absolute;
+        bottom: 0px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .banner {
+        opacity: 0;
+    }
+
+    .backNewComponent {
+        height: 280px;
+    }
+
+    .newComponent h2 {
+        font-size: 60px;
+    }
+
+    #decoration1 {
+        top: 90px;
+        right: 50px;
+    }
+
+    .backFooter {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    .backInformation .bandaInformation {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        margin: auto;
+    }
+
+    .textInformation {
+        width: 90%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .imgInformation {
+        width: 80%;
+    }
+
+    #img1 {
+        width: 30vw;
+        top: -15%;
+        right: 0;
+    }
+
+    #decoration1 {
+        width: 0;
+        height: 0;
+    }
+
+    .principalEvent {
+        display: block;
+        width: 100%;
+        height: 550px;
+        position: relative;
+    }
+
+    .principalEvent .imagen {
+        height: 60%;
+        width: 100%;
+    }
+    .colorBackDecoration {
+        margin: auto;
+        width: 100%;
+    }
+
+    .principalEvent .contentEvent {
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        left: 5%;
+        
+
+    }   
+}
+
+@media (max-width: 600px) {
+
+    .header ul {
+        width: fit-content;
+    }
+
+    .header a {
+        font-size: 24px;
+    }
+
+    .showCase {
+        font-size: 30px;
+    }
+
+
+
+    .titleEvent {
+        font-size: 20px;
+    }
+
+    .principalEvent .contentEvent {
+        left: 0;
+        padding: 0 20px 20px 20px;
+        width: 100%;
+        color: #05080e;
+        &::before {
+            background-color: #f6ab33;
+        }
+    }
+
+    .principalEvent .contentEvent a {
+        color: #05080e;
+        border-color: #05080e;
+    }
+
+    .colorBackDecoration {
+        width: 0;
+
+    }
+
+    .publications {
+        width: 80%;
+    }
+
+    .contentPublications {
+        width: 110%;
+        padding: 10px;
+        margin-left: -5%;
+        background: #f6ab33;
+        color: #05080e;
+    }
+    .titlePublications {
+        font-size: 18px;
+    }
+
+    .publications .button::before {
+        opacity: 0;
+    }
+
+    .newComponent h2 {
+        font-size: 40px;
+    }
+
+    .newComponent p {
+        font-size: 16px;
+    }
+
+    .newComponent a {
+        font-size: 20px;
+    }
+
+    .textInformation {
+        padding: 20px ;
+    }
+
+    .textInformation p{
+        font-size: 14px;
+    }
+
+    .textInformation h1 {
+        font-size: 40px;
+    }
+
+    .imgInformation {
+        width: 90%;
+    }
+
+    .colorImagenDecoration {
+        opacity: 0;
+    }
+
+    .backFooter {
+        padding-top: 20px;
+    }
+
+    .socialNetworks {
+        margin-bottom: 0;
+    }
+
+    .socialNetworks img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footerLinks {
+        margin-top: 40px;
+    }
+    .footerLinks a{
+        font-size: 12px;
+    }
+
+    .footerCopy p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .showCase {
+        font-size: 22px;
+        margin: auto 30px 30px 30px;
+    }
+
+    #buttonShow {
+        font-size: 14px;
+    }
+
+    .flecha{
+        width: 24px;
+        height: 24px;
+    }
+    .chevron {
+        top: 6px;
+        width: 15px;
+        height: 4px;
+    }
+
+    .headCase {
+        padding-left: 45%;
+    }
+    .headCase a {
+        width: 16px;
+        height: 16px;
+    }
+
+    .titleEvent {
+        font-size: 16px;
+    }
+
+    .principalEvent {
+        height: 400px;
+    }
+
+    .principalEvent p {
+        font-size: 14px;
+    }
+
+    .principalEvent .button {
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+
+    .titlePublications {
+        font-size: 16px;
+    }
+
+    .newComponent {
+        padding: 0 10px;
+    }
+
+    .backInformation {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .textInformation h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .footerLinks {
+        display: none;
+    }
+
+
+}
